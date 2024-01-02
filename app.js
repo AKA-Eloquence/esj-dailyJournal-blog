@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-// global var for posts
+// Global Variable for posts
 let posts = [];
 
 
@@ -32,7 +32,7 @@ let posts = [];
 
 
 
-//asdsadsadsadasdsdkfj ijdkfj[ ijwe'fkl;dj; a8opue[ioajd;fiojsp[dfjsdpofj lidfho dsfsdfil jdsf ok]]]
+// /Path
 app.get("/" , (req , res) => {
     res.render("home" , {startingContent: homeStartingContent,
         posts: posts,
